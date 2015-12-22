@@ -1,0 +1,690 @@
+html {
+    background: url("http://wwwx.cs.unc.edu/Courses/comp426-f15/users/dbobbitt/Codiad/workspace/cs426/Final/Frontend/backgrounds/footer_lodyas.png") repeat;
+    background-attachment: fixed; 
+    height: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+body {
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    right:0; 
+    left:0;
+    margin:0;
+    padding:0;
+}
+
+#logincontainer {
+    margin: 2% auto; 
+    margin-top: 10%;
+    background-color: whitesmoke;
+    width: 350px;
+    height: 325px;
+    vertical-align: middle;
+    padding: 2em;
+    border-style: solid;
+    border-color: #7BAFD4;
+    border-radius: 8px;
+    border-width: 3px;
+}
+
+#signupcontainer {
+    margin: 8% auto; 
+    background-color: whitesmoke;
+    width: 350px;
+    height: 500px;
+    vertical-align: middle;
+    padding: 2em;
+    border-style: solid;
+    border-color: #7BAFD4;
+    border-radius: 8px;
+    border-width: 3px;
+}
+
+#preferencescontainer {
+    margin: 8% auto; 
+    background-color: whitesmoke;
+    width: 450px;
+    height: 450px;
+    vertical-align: middle;
+    padding: 2em;
+    border-style: solid;
+    border-color: #7BAFD4;
+    border-radius: 8px;
+    border-width: 3px;
+}
+
+form {
+    margin: auto;
+    width: 350px;
+    vertical-align: middle;
+    color: #545454;
+}
+
+h2 {
+    text-align: center; 
+    color: #545454;
+    
+}
+
+.login, .preferences{
+    font-size: 15px;
+    margin: 10px;
+    width: 87%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    font-size: 15px;
+    padding:5px 15px; 
+    width: 100px;
+    height: 2em;
+    background:#7BAFD4; 
+    color: white;
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    transition: 0.3s;
+    margin-left: 45px;
+    margin-right: 15px;
+    
+}
+
+input[type=submit]:hover {
+    transition: 0.3s;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7BAFD4;
+    color: #7BAFD4; 
+}
+
+#submitbtn {
+    margin-top: 20px;
+}
+
+#signupbtn {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#account {
+    color: #7BAFD4;
+    display: block;
+    text-align: center;
+}
+
+#navbar {
+    background: #7BAFD4;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#groupbutton {
+    background: url("http://wwwx.cs.unc.edu/Courses/comp426-f15/users/dbobbitt/Codiad/workspace/cs426/Final/Frontend/backgrounds/menu.png");
+    background-size: 30px 30px;
+    background-position: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 45px;
+    float: left;
+    transition: 0.3s;
+}
+
+#groupbutton:hover {
+    transition: 0.3s;
+    background-color: #545454;
+    cursor: pointer;
+}
+
+#settingsbutton {
+    background: url("http://wwwx.cs.unc.edu/Courses/comp426-f15/users/dbobbitt/Codiad/workspace/cs426/Final/Frontend/backgrounds/settings-9-xxl.png");
+    background-size: 30px 30px;
+    background-position: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 45px;
+    float: right;
+    transition: 0.3s;
+}
+
+#settingsbutton:hover {
+    transition: 0.3s;
+    background-color: #545454;
+    cursor: pointer;
+}
+
+.logo {
+    margin: auto;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+#chatcontainer {
+    position: relative;
+    margin: auto; 
+    margin-top: 5%;
+    background-color: whitesmoke;
+    width: 60%;
+    height: 80%;
+    vertical-align: middle;
+    padding: 0.5em 0.5em 2em 0.5em;
+    border-style: solid;
+    border-color: #545454;
+    border-radius: 5px;
+    border-width: 5px;
+    overflow: hidden;
+}
+
+#groupname {
+	position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: #545454;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+#addMember {
+	position: absolute;
+	top: -5px;
+	right: 0px;
+	color: white;
+	font-size: 35px;
+	height: 35px;
+	width: 35px;
+	padding-top: 0px;
+	text-align: center;
+	vertical-align: top;
+	cursor: pointer;
+	transition: 0.3s;
+	z-index: 3;
+}
+
+#addMember:hover {
+	transition: 0.3s;
+	color: #7BAFD4;
+}
+
+#messageContainer {
+	position: relative;
+	display: block;
+    top: 35px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    font-size: 12px;
+}
+
+#messageList {
+    position: absolute;
+    display: block;
+    top: 0px
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    overflow: scroll;
+}
+
+.message {
+	padding: 1em;
+	border-top-style: solid;
+	border-width: thin;
+	border-color: gray;
+	/*width:97%;*/
+}
+
+.sameUser {
+	/*padding: 1em;*/
+	margin-top: -1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	/*padding-top: 1em;*/
+	/*padding-bottom: 0.5em;*/
+	/*width:97%;*/
+}
+
+#chatborder {
+    position: absolute;
+    display: block;
+    margin: auto;
+    bottom: 0;
+    min-height: 48px;
+    height: auto;
+    left: 0;
+    width: 100%;
+    background-color: #C1C1C1;
+    overflow: auto;
+    clear: both;
+}
+
+#innercontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+#chatInput {
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    min-width: 40%;
+    width: 82%;
+    margin: 4px;
+    padding: 10px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#chatSend {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #7BAFD4;
+    color: white;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    overflow: hidden;
+    max-width: 9%;
+    width: 7%;
+    height: 3em;
+    padding: 0px;
+    margin: auto;
+}
+
+#codeWin {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #7BAFD4;
+    color: white;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    width: 4%;
+    max-width: 6%;
+    min-width: 2%;
+    height: 3em;
+    margin: auto;
+    padding: 0px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 5;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    display: none;
+}
+
+#codeprompt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    width: 50%;
+    height: 600px;
+    vertical-align: center;
+    display: none;
+    overflow: hidden;
+}
+
+#newGroup {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	display: none;
+	z-index: 10;
+	width: 30%;
+	height: 40%;
+	vertical-align: center;
+	overflow: scroll;
+	background-color: #323232;
+	border-radius: 4px;
+}
+
+#accountPrefs {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	display: none;
+	z-index: 10;
+	width: 30%;
+	height: 40%;
+	vertical-align: center;
+	overflow: scroll;
+	background-color: #323232;
+	border-radius: 4px;
+}
+
+#newMember {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	display: none;
+	z-index: 10;
+	width: 30%;
+	height: 25%;
+	vertical-align: center;
+	overflow: scroll;
+	background-color: #323232;
+	border-radius: 4px;
+}
+
+#creategroupheader, #creatememberheader, #accountpreferencesheader {
+	color: white;
+	text-align: center;
+	padding-top: 1em;
+}
+
+#newGroup input {
+	font-size: 15px;
+    margin: 10px;
+    width: 87%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    margin-top: 5px;
+}
+
+#newMember input {
+	font-size: 15px;
+    margin: 10px;
+    width: 87%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    margin-top: 5px;
+}
+
+#accountPrefs input {
+	font-size: 15px;
+    margin: 10px;
+    width: 87%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    margin-top: 5px;
+}
+
+#CKEcode {
+    position: relative;
+    top: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+#codeinput {
+    position: relative;
+    resize: none;
+    background-color: #545454;
+    color: white;
+    outline: none;
+    font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+    width: 95%;
+    height: 75%;
+    padding: 8px;
+    border-style: solid;
+    border-color: #7BAFD4;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#centerbtn {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#codeSend, #newGroupSubmit, #newMemberSubmit, #accountPrefSubmit {
+    position: relative;
+    display: block;
+    bottom: 0px;
+    cursor: pointer;
+    background-color: #7BAFD4;
+    color: white;
+    font-size: 12px;
+    border-style: solid;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 12%;
+    height: 3em;
+    padding: 0px;
+    margin: auto;
+    transition: 0.2s;
+}
+
+#codeSend:hover, #newGroupSubmit:hover {
+    background-color: white;
+    color: #7BAFD4;
+    transition: 0.2s;
+}
+
+#codesettings {
+    position: absolute;
+    top: 0;
+    min-height: 35px;
+    height: auto;
+    left: 0;
+    width: 100%;
+    background-color: #545454;
+    overflow: auto;
+    color: white;
+}
+
+#codesettings p {
+    line-height: 35px;
+    color: white;
+    display: inline-block;
+    vertical-align: center;
+    margin: auto;
+    padding-left: 15px;
+}
+
+#langselect {
+    display: inline-block;
+}
+
+#groupcontainer {
+    position: fixed;
+    top: 45px;
+    left: 0px;
+    width: 15%;
+    height: 100%;
+    background-color: #545454;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#groupcontainer h3 {
+    color: white;
+    text-align: center;
+    border-bottom-style: solid;
+    border-width: 2px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#createGroup {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
+	font-size: 35px;
+	height: 42px;
+	width: 42px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#createGroup:hover {
+	transition: 0.3s;
+	background-color: gray;
+}
+
+#groupcontainer #grouplist .group {
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#groupcontainer #grouplist .group:hover {
+    background-color: gray;
+    transition: 0.3s;
+}
+
+#settingscontainer {
+    position: fixed;
+    top: 45px;
+    right: 0px;
+    width: 160px;
+    height: 73px;
+    background-color: #545454;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    z-index: 1;
+}
+
+#settingscontainer div {
+	width: 160px;
+}
+
+.settingoption {
+	color: white;
+	padding: 0.5em;
+	border-bottom-style: solid;
+	border-width: thin;
+	border-color: white;
+	cursor: pointer;
+    transition: 0.3s;
+}
+
+div.signoutlink {
+	color: white;
+	padding: 0.5em;
+	/*border-bottom-style: solid;*/
+	/*border-width: thin;*/
+	/*border-color: white;*/
+	cursor: pointer;
+    transition: 0.3s;
+}
+
+div.signoutlink:hover {
+	background-color: gray;
+    transition: 0.3s;	
+}
+
+#settingscontainer div:hover {
+	background-color: gray;
+    transition: 0.3s;	
+}
+
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+.slide-down {
+    animation: slide-down 0.5s forwards;
+    -webkit-animation: slide-down 0.5s forwards;
+}
+
+.slide-up {
+    animation: slide-up 0.5s forwards;
+    -webkit-animation: slide-up 0.5s forwards;
+}
+    
+@keyframes slide-down {
+    100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-down {
+    100% { -webkit-transform: translateY(0%); }
+}
+    
+@keyframes slide-up {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes slide-up {
+    0% { -webkit-transform: translateY(0%); }
+    100% { -webkit-transform: translateY(-100%); }
+}
